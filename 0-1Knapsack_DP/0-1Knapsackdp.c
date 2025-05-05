@@ -31,7 +31,7 @@ void knapsack(int v[], int w[], int n, int W){
     int j = W;
     for (int i = n; i > 0 && res > 0; i--) {
         if (res != dp[i-1][j]) {
-            printf("%d ", i-1);
+            printf("%d ", i);
             res -= v[i-1];
             j -= w[i-1];
         }
